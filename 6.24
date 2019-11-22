@@ -1,0 +1,71 @@
+// chapter 6 # 24 rock paper scissors
+// This program has the computer randomly generate a number 1-rock,
+// 2-paper, or 3-scissors at random then the user enters a number
+// to play rock/paper/scissors and outputs the outcome
+// https://www.bogotobogo.com/cplusplus/RandomNumbers.php (random#s)
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include "pch.h"
+
+using namespace std;
+
+int winner();
+
+
+int main() {
+
+
+	int comChoice = (rand() % 3) + 1;
+	int userChoice;
+
+	cout << "Lets play rock paper scissors! Select 1:Rock 2:Paper 3:Scissors" << endl;
+	cin >> userChoice;
+
+	cout << "The Computer chose" << comChoice << endl;
+	
+	return winner();
+}
+
+int winner(); {
+
+	if (userChoice == 1) {
+		if (comChoice == 1) {
+			cout << "Its a tie";
+		}
+		else if (userChoice == 2) {
+			cout << " You lose :(";
+		}
+		else {
+			cout << " You win!"
+		}
+	}
+
+	if (userChoice == 2) {
+		if (comChoice == 2) {
+			cout << "Its a tie";
+		}
+		else if (userChoice == 3) {
+			cout << " You lose :(";
+		}
+		else {
+			cout << " You win!";
+		}
+	}
+
+	if (userChoice == 3) {
+		if (comChoice == 3) {
+			cout << "Its a tie";
+		}
+		else if (userChoice == 1) {
+			cout << " You lose :(";
+		}
+		else {
+			cout << " You win!"
+		}
+	}
+
+
+	return 0;
+}
