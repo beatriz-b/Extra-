@@ -11,12 +11,13 @@
 
 using namespace std;
 
+//I do not know how to initiallze this function 
 int winner();
 
 
 int main() {
 
-
+// I'm not sure how to use select random numbers or how to initialize it 
 	int comChoice = (rand() % 3) + 1;
 	int userChoice;
 
@@ -28,6 +29,7 @@ int main() {
 	return winner();
 }
 
+// list out all possible choices 
 int winner(); {
 
 	if (userChoice == 1) {
