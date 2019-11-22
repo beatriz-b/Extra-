@@ -4,10 +4,13 @@
 //https://www.geeksforgeeks.org/array-strings-c-3-different-ways-create/ strings/arrays
 //https://www.dreamincode.net/forums/topic/318529-phone-number-list-issues/
 //http://www.cplusplus.com/forum/beginner/99081/
+//https://www.geeksforgeeks.org/strstr-in-ccpp/ used more
 
 #include "pch.h"
 #include <iostream>
 #include <string> 
+#include <string.h>
+#include <stdio.h> 
 
 using namespace std;
 
@@ -22,10 +25,13 @@ int main (){
 
 int i = 0;
 length = 100; 
+char* p;
 
 cout << "To search for your contact's number please enter a name or partial name of the person.\n";
 
 	cin.getline(search, length);
+
+	p = strstr(phoneBook, search) 
 	
 // i know I have to create a while loop that searches through the names but i don't know how to 
 // set its parameters 
