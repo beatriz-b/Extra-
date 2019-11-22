@@ -3,6 +3,7 @@
 // then displays the matching entries in the array 
 //https://www.geeksforgeeks.org/array-strings-c-3-different-ways-create/ strings/arrays
 //https://www.dreamincode.net/forums/topic/318529-phone-number-list-issues/
+//http://www.cplusplus.com/forum/beginner/99081/
 
 #include "pch.h"
 #include <iostream>
